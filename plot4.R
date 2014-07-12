@@ -8,7 +8,7 @@ data_power <- read.table("./exploratory/household_power_consumption.txt", sep = 
 
 dataf <- subset(data_power, Date == "1/2/2007" | Date == "2/2/2007")
 
-#######Create and paste a new variable for Date an Time variables
+#######Create a new variable pasting Date ann Time variables
 
 dataf$datetime <- strptime(paste(dataf$Date, dataf$Time), , format = "%d/ %m/ %Y %H: %M: %S")
 
