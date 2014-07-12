@@ -13,7 +13,7 @@ dataf <- subset(data_power, Date == "1/2/2007" | Date == "2/2/2007")
 
 #######Create a new variable pasting Date ann Time variables
 
-dataf$datetime <- strptime(paste(dataf$Date, dataf$Time), , format = "%d/ %m/ %Y %H: %M: %S")
+dataf$datetime <- strptime(paste(dataf$Date, dataf$Time), format = "%d/ %m/ %Y %H: %M: %S")
 
 ########Graph 1 (histogram)
 
